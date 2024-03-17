@@ -1,0 +1,63 @@
+@mixin button ($btn_color, $btn_bkg, $btn_padd, $btn_w, $btn_fz) {
+    display: block;
+    color: $btn_color;
+    font-weight: 700;
+    font-size: $btn_fz;
+    background: $btn_bkg;
+    padding: $btn_padd;
+    width: $btn_w;
+    transition: all .2s;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover{
+       transform: scale(1.1);
+    }
+}
+@mixin arrBtn () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $accent-color3;
+    padding: 23px;
+    width: 60px;
+    transition: all .3s;
+    &:hover {
+        background: $accent-color2;
+    }
+}
+@mixin title ($title_color) {
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title_color;
+}
+@mixin all_link () {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $accent-color3;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+@mixin footer_title () {
+    color: $accent-color1;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+@mixin footer_item () {
+    color: $accent-color1;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: all .3s;
+    &:last-child {
+        margin: 0;
+    }
+    &:hover {
+        color: $accent-color2;
+    }
+}

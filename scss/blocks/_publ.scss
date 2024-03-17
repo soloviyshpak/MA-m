@@ -1,0 +1,47 @@
+.publ {
+    padding: 150px 0 206px;
+}
+.publ__toprow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.publ__title {
+    @include title ($title-color);
+}
+.publ__all {
+    @include all_link ();
+}
+.publ__cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.publ__card {
+    display: block;
+    max-width: 306px;
+    &:hover {
+        .publ__card-title {
+            text-decoration: underline;
+        }
+    }
+}
+.publ__card-imgbox {
+}
+.publ__card-date {
+    color: $title-color;
+    opacity: 0.75;
+    margin-top: 30px;
+}
+.publ__card-title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-top: 20px;
+}
+.publ__card-subtitle {
+    color: $accent-color3;
+    margin-top: 20px;
+}

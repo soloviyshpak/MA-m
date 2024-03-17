@@ -1,0 +1,117 @@
+.projects {
+    background: rgba(19, 61, 141, 0.5);
+    padding: 120px 0 150px;
+}
+.projects__toprow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects__title {
+    @include title ($accent-color1);
+}
+.project__linkbox {
+    display: flex;
+    align-items: center;
+}
+.project__all {
+    @include all_link ();
+    color: $accent-color1;
+    margin-right: 40px;
+}
+.project__slider-btnbox {
+    display: flex;
+}
+.project__slider-prev {
+    @include arrBtn ();
+    margin-right: 15px;
+}
+.project__slider-next {
+    @include arrBtn ();
+}
+.projects__slider {
+    margin-top: 85px;
+}
+.project__slide {
+    display: flex;
+    height: 600px;
+    width: 100%;
+}
+.project__slide--first {
+    .project__slide-decor {
+        background: url('../img/projects/1.jpg') no-repeat;
+    }
+}
+.project__slide--second {
+    .project__slide-decor {
+        background: url('../img/projects/2.jpg') no-repeat;
+    }
+}
+.project__slide--third {
+    .project__slide-decor {
+        background: url('../img/projects/3.jpg') no-repeat;
+    }
+}
+.project__slide-decor {
+    padding: 45px;
+    width: 706px;
+    position: relative;
+}
+.project__slide-decor_decr {
+    max-width: 468px;
+    position: absolute;
+    bottom: 46px;
+    left: 44px;
+}
+.project__slide-decor_title {
+    color: $accent-color1;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.project__slide-decor_subtitle {
+    color: $accent-color1;
+}
+.project__slide-info {
+    background: $accent-color3;
+    padding: 55px 60px;
+    width: 590px;
+    position: relative;
+}
+.project__slide-info_countbox {
+    color: $accent-color1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 28px 50px;
+}
+.project__slide-info_countelement {
+    max-width: 210px;
+}
+.project__slide-info_countorow {
+}
+.project__slide-info_count {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.project__slide-info_counttext {
+    margin-top: 10px;
+}
+.project__slide-info_btn {
+    @include button ($accent-color1, transparent, 15px 30px, 170px, 16px);
+    border: 1px solid $accent-color1;
+    position: absolute;
+    bottom: 50px;
+    left: 57px;
+    letter-spacing: 0.05em;
+}
+.slick-initialized {
+    .project__slide {
+        display: flex;
+    }
+}
