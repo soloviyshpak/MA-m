@@ -965,4 +965,118 @@
 
 .activity__projects-text {
   font-weight: 500;
+}
+
+.contacts {
+  padding: 90px 0 150px;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.contacts__linkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.contacts__linkbox span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #133d8d;
+  margin: 0 15px;
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 13px;
+  color: #333;
+}
+.contacts__link:hover {
+  text-decoration: underline;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map-info {
+  color: #fff;
+  background: #fff;
+  padding-top: 46px;
+  padding-left: 21px;
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  width: 274px;
+  height: 256px;
+}
+
+.contacts__map-btn {
+  background: #133d8d;
+  padding: 10px 15px 9px 15px;
+  margin-left: 20px;
+  transition: all 0.3s;
+}
+.contacts__map-btn:last-child {
+  margin: 0;
+}
+
+.contacts__map-btn--active {
+  background: rgba(19, 61, 141, 0.5);
+}
+
+.contacts__map-adress {
+  margin-top: 43px;
+  margin-left: 58px;
+  max-width: 176px;
+}
+
+.contacts__map-adress-item {
+  color: #333;
+  font-weight: 500;
+  max-width: 194px;
+  margin-bottom: 17px;
+  position: relative;
+}
+.contacts__map-adress-item a {
+  color: #333;
+  font-weight: 500;
+}
+.contacts__map-adress-item a:hover {
+  text-decoration: underline;
+}
+.contacts__map-adress-item:last-child {
+  margin: 0;
+}
+.contacts__map-adress-item::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -34px;
+}
+
+.contacts__map-adress-item--adress::before {
+  width: 14px;
+  height: 18px;
+  background: url("../img/icons/waypoint.svg");
+  top: 10px;
+}
+
+.contacts__map-adress-item--phone::before {
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/phone.svg");
+}
+
+.contacts__map-adress-item--email::before {
+  width: 18px;
+  height: 14px;
+  background: url("../img/icons/message.svg");
 }/*# sourceMappingURL=main.css.map */
