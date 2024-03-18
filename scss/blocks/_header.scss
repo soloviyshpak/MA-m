@@ -16,6 +16,10 @@
         z-index: -1;
     }
 }
+.header-page {
+    background: $accent-color3;
+    height: 160px;
+}
 .header__toprow {
     display: flex;
     justify-content: space-between;

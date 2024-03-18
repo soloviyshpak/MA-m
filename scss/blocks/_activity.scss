@@ -1,0 +1,108 @@
+.activity {
+    padding: 90px 0 150px;
+}
+.activity__title {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-bottom: 60px;
+}
+.activity__linkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    span {
+        display: block;
+        width: 4px;
+        height: 4px;
+        background: $accent-color3;
+        margin: 0 15px;
+    }
+}
+.activity__link {
+    font-weight: 500;
+    font-size: 13px;
+    color: $title-color;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.activity__content {
+    display: flex;
+}
+.activity__article {
+    max-width: 666px;
+}
+.activity__preface {
+    padding-top: 6px;
+    padding-left: 37px;
+    padding-bottom: 9px;
+    border-left: 3px solid $accent-color2;
+    max-width: 666px;
+    margin-bottom: 62px;
+}
+.activity__preface-page {
+    margin-bottom: 13px;
+    color: $title-color;
+    &:last-child {
+        margin: 0;
+        text-indent: 3px;
+    }
+}
+.activity__text {
+}
+.activity__acticle-box {
+    margin-bottom: 60px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.activity__article-title {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-bottom: 30px;
+}
+.activity__article-page {
+    color: $title-color;
+    margin-bottom: 15px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.activity__projects {
+    background: $accent-color3;
+    color: $accent-color1;
+    padding: 50px 60px 60px 60px;
+    width: 524px;
+    max-height: 620px;
+    margin-left: 104px;
+}
+.activity__projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.activity__projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 35px 45px;
+}
+.activity__projects-item {
+    max-width: 180px;
+}
+.activity__projects-number {
+    font-weight: 900;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.activity__projects-text {
+    font-weight: 500;
+}
