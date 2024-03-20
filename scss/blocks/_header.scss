@@ -58,16 +58,68 @@
 }
 .header__nav {
     margin-top: 30px;
+    @include media (1024px) {
+        position: relative;
+        margin-top: 70px;
+    }
+}
+.nav__burger {
+    display: none;
+    @include media (1024px) {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-top: 30px;
+        margin-right: -50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        color: $accent-color1;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        span {
+            display: block;
+            width: 13px;
+            height: 2px;
+            background: $accent-color1;
+            margin-right: 10px;
+            position: relative;
+            &::before {
+                content: '';
+                width: 13px;
+                height: 2px;
+                background: $accent-color1;
+                position: absolute;
+                top: 4px;
+            }
+            &::after {
+                content: '';
+                width: 13px;
+                height: 2px;
+                background: $accent-color1;
+                position: absolute;
+                bottom: 4px;
+            }
+        }
+    }
 }
 .nav__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media (1024px) {
+        flex-direction: column;
+        display: none;
+    }
 }
 .nav__item {
     transition: all .3s;
     &:hover {
         transform: scale(1.2);
+    }
+    @include media (1024px) {
+        margin-top: 15px;
+        text-align: center;
     }
 }
 .nav__link {
@@ -88,7 +140,7 @@
 }
 .header__slide-main {
     height: 550px;
-    padding: 0 312px;
+    padding: 0 15.9%;
 }
 .header__slide-title {
     font-size: 60px;
@@ -115,6 +167,18 @@
     position: absolute;
     bottom: 4px;
     right: 311px;
+    @include media (1880px) {
+        right: 292px;
+    }
+    @include media (1650px) {
+        right: 178px;
+    }
+    @include media (1400px) {
+        right: 52px;
+    }
+    @include media (1296px) {
+        right: 0;
+    }
 }
 .header__slide-info_title {
     font-weight: 700;

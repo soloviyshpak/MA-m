@@ -1,3 +1,9 @@
+// Burger menu
+$('.nav__burger').on('click', function (e) {
+    e.preventDefault();
+    $('.nav__list').slideToggle();
+})
+
 // Header background changer
 function changeHeaderBkg() {
     if ($('.header__slide--danilkin').hasClass('slick-active')) {

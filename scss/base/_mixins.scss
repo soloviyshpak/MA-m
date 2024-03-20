@@ -61,3 +61,8 @@
         color: $accent-color2;
     }
 }
+@mixin media ($maw) {
+    @media screen and (max-width: $maw) {
+        @content;
+    }
+ }
