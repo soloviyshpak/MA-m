@@ -2,6 +2,7 @@
 $('.nav__burger').on('click', function (e) {
     e.preventDefault();
     $('.nav__list').slideToggle();
+    $('.header-page').toggleClass('header-page__burger-open');
 })
 
 // Header background changer

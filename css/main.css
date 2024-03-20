@@ -47,6 +47,10 @@
   height: 160px;
 }
 
+.header-page__burger-open {
+  height: 410px;
+}
+
 .header__toprow {
   display: flex;
   justify-content: space-between;
