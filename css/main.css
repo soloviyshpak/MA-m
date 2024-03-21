@@ -42,6 +42,10 @@
   z-index: -1;
 }
 
+.header__burger-open {
+  height: 1077px;
+}
+
 .header-page {
   background: #133d8d;
   height: 160px;
