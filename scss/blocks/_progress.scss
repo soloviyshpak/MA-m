@@ -12,11 +12,36 @@
 .progress__slider {
     margin: 0 50px 0 50px;
     max-width: 1076px;
+    @include media (1320px) {
+        width: 1050px;
+    }
+    @include media (1300px) {
+        width: 1000px;
+    }
+    @include media (1252px) {
+        width: 950px;
+    }
+    @include media (1220px) {
+        width: 900px;
+    }
+    @include media (1165px) {
+        width: 850px;
+    }
+    @include media (1115px) {
+        width: 800px;
+    }
+    @include media (1066px) {
+        width: 700px;
+    }
 }
 .progress__slide {
     padding: 60px;
     background: rgba(19, 61, 141, 0.15);
     display: flex;
+    align-items: center;
+    @include media (1165px) {
+        flex-direction: column;
+    }
     
 }
 .progress__slide-content {
@@ -62,8 +87,13 @@
 }
 .progress__slide-decor {
     margin-left: 65px;
+    @include media (1165px) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 .progress__slide-decor_img {
+    
 }
 .progress__slide-next {
     @include arrBtn ();

@@ -98,6 +98,9 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-right: 10px;
+    @include media (1151px) {
+        font-size: 33px;
+    }
 }
 .project__slide-info_counttext {
     margin-top: 10px;

@@ -16,6 +16,10 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    @include media (1320px) {
+        flex-flow: row wrap;
+        row-gap: 55px;
+    }
 }
 .publ__card {
     display: block;
@@ -24,6 +28,9 @@
         .publ__card-title {
             text-decoration: underline;
         }
+    }
+    @include media (1320px) {
+        margin-right: 15px;
     }
 }
 .publ__card-imgbox {

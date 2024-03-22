@@ -79,8 +79,14 @@
     color: $accent-color1;
     padding: 50px 60px 60px 60px;
     width: 524px;
-    max-height: 620px;
+    height: 620px;
     margin-left: 104px;
+    @include media (1295px) {
+        height: 720px;
+    }
+    @include media (1230px) {
+        height: 820px;
+    }
 }
 .activity__projects-title {
     font-weight: 700;

@@ -15,6 +15,11 @@
   max-width: 1296px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1320px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 
 .logo {
   transition: all 0.3s;
@@ -43,7 +48,7 @@
 }
 
 .header__burger-open {
-  height: 1077px;
+  height: 1100px;
 }
 
 .header-page {
@@ -350,6 +355,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1320px) {
+  .news__cardbox {
+    flex-flow: row wrap;
+    row-gap: 24px;
+  }
+}
 
 .news__card {
   display: block;
@@ -419,6 +430,13 @@
 .history__inner {
   display: flex;
 }
+@media screen and (max-width: 1252px) {
+  .history__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .history__content {
   max-width: 526px;
@@ -429,6 +447,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (max-width: 1252px) {
+  .history__title {
+    text-align: center;
+  }
 }
 
 .history__article {
@@ -445,6 +468,11 @@
 
 .history__decor {
   margin: 75px 0 0 149px;
+}
+@media screen and (max-width: 1252px) {
+  .history__decor {
+    margin: 75px 0 0 0;
+  }
 }
 
 .history__curve {
@@ -509,6 +537,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1320px) {
+  .publ__cards {
+    flex-flow: row wrap;
+    row-gap: 55px;
+  }
+}
 
 .publ__card {
   display: block;
@@ -516,6 +550,11 @@
 }
 .publ__card:hover .publ__card-title {
   text-decoration: underline;
+}
+@media screen and (max-width: 1320px) {
+  .publ__card {
+    margin-right: 15px;
+  }
 }
 
 .publ__card-date {
@@ -679,6 +718,11 @@
   text-transform: uppercase;
   margin-right: 10px;
 }
+@media screen and (max-width: 1151px) {
+  .project__slide-info_count {
+    font-size: 33px;
+  }
+}
 
 .project__slide-info_counttext {
   margin-top: 10px;
@@ -736,11 +780,52 @@
   margin: 0 50px 0 50px;
   max-width: 1076px;
 }
+@media screen and (max-width: 1320px) {
+  .progress__slider {
+    width: 1050px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .progress__slider {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1252px) {
+  .progress__slider {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .progress__slider {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .progress__slider {
+    width: 850px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .progress__slider {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1066px) {
+  .progress__slider {
+    width: 700px;
+  }
+}
 
 .progress__slide {
   padding: 60px;
   background: rgba(19, 61, 141, 0.15);
   display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1165px) {
+  .progress__slide {
+    flex-direction: column;
+  }
 }
 
 .progress__slide-content {
@@ -791,6 +876,12 @@
 
 .progress__slide-decor {
   margin-left: 65px;
+}
+@media screen and (max-width: 1165px) {
+  .progress__slide-decor {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .progress__slide-next {
@@ -1023,8 +1114,18 @@
   color: #fff;
   padding: 50px 60px 60px 60px;
   width: 524px;
-  max-height: 620px;
+  height: 620px;
   margin-left: 104px;
+}
+@media screen and (max-width: 1295px) {
+  .activity__projects {
+    height: 720px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .activity__projects {
+    height: 820px;
+  }
 }
 
 .activity__projects-title {

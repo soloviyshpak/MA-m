@@ -4,12 +4,20 @@
 }
 .history__inner {
     display: flex;
+    @include media (1252px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .history__content {
     max-width: 526px;
 }
 .history__title {
     @include title($accent-color1);
+    @include media (1252px) {
+        text-align: center;
+    }
 }
 .history__article {
     margin-top: 40px;
@@ -23,6 +31,9 @@
 }
 .history__decor {
     margin: 75px 0 0 149px;
+    @include media (1252px) {
+        margin: 75px 0 0 0;
+    }
 }
 .history__curve {
     margin-bottom: 15px;
