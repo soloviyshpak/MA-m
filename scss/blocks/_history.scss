@@ -37,11 +37,17 @@
 }
 .history__curve {
     margin-bottom: 15px;
+    @include media (670px) {
+        width: 100%;
+    }
 }
 .history__list {
     margin-left: 73px;
     font-weight: 500;
     color: $accent-color1;
+    @include media (370px) {
+        margin-left: 50px;
+    }
 }
 .history__item {
     margin-bottom: 10px;
@@ -59,5 +65,11 @@
         left: -28px;
         transform: translateY(-50%);
         background: $accent-color1;
+    }
+    @include media (670px) {
+        font-size: 14px;
+    }
+    @include media (400px) {
+        font-size: 11px;
     }
 }

@@ -667,11 +667,21 @@
 .history__curve {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 670px) {
+  .history__curve {
+    width: 100%;
+  }
+}
 
 .history__list {
   margin-left: 73px;
   font-weight: 500;
   color: #fff;
+}
+@media screen and (max-width: 370px) {
+  .history__list {
+    margin-left: 50px;
+  }
 }
 
 .history__item {
@@ -691,6 +701,16 @@
   left: -28px;
   transform: translateY(-50%);
   background: #fff;
+}
+@media screen and (max-width: 670px) {
+  .history__item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .history__item {
+    font-size: 11px;
+  }
 }
 
 .publ {
