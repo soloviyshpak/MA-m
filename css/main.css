@@ -46,9 +46,39 @@
   bottom: 0;
   z-index: -1;
 }
+@media screen and (max-width: 873px) {
+  .header {
+    height: 980px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .header {
+    height: 1040px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header {
+    height: 1100px;
+  }
+}
 
 .header__burger-open {
   height: 1100px;
+}
+@media screen and (max-width: 873px) {
+  .header__burger-open {
+    height: 1250px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .header__burger-open {
+    height: 1330px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__burger-open {
+    height: 1390px;
+  }
 }
 
 .header-page {
@@ -72,6 +102,12 @@
   font-weight: 500;
   color: #fff;
 }
+@media screen and (max-width: 510px) {
+  .header__contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .header__email {
   margin-right: 50px;
@@ -80,6 +116,11 @@
 .header__email:hover {
   color: #bd0007;
   text-decoration: underline;
+}
+@media screen and (max-width: 510px) {
+  .header__email {
+    margin: 0 0 5px 0;
+  }
 }
 
 .header__tel {
@@ -194,12 +235,62 @@
   height: 550px;
   padding: 0 15.9%;
 }
+@media screen and (max-width: 873px) {
+  .header__slide-main {
+    height: 710px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .header__slide-main {
+    height: 770px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__slide-main {
+    height: 826px;
+  }
+}
 
 .header__slide-title {
   font-size: 60px;
   font-weight: 300;
   color: #fff;
   max-width: 636px;
+}
+@media screen and (max-width: 623px) {
+  .header__slide-title {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 572px) {
+  .header__slide-title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 522px) {
+  .header__slide-title {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .header__slide-title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 421px) {
+  .header__slide-title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .header__slide-title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__slide-title {
+    font-size: 28px;
+  }
 }
 
 .header__slide-subtitle {
@@ -209,6 +300,11 @@
   margin-top: 30px;
   padding-left: 30px;
   border-left: 1px solid #fff;
+}
+@media screen and (max-width: 470px) {
+  .header__slide-subtitle {
+    font-size: 11px;
+  }
 }
 
 .header_slide-btn {
@@ -256,6 +352,36 @@
     right: 0;
   }
 }
+@media screen and (max-width: 725px) {
+  .header__slide-info {
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 555px) {
+  .header__slide-info {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .header__slide-info {
+    width: 420px;
+    bottom: 107px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__slide-info {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__slide-info {
+    width: 300px;
+  }
+}
 
 .header__slide-info_title {
   font-weight: 700;
@@ -263,11 +389,26 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 473px) {
+  .header__slide-info_title {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__slide-info_title {
+    text-align: center;
+  }
+}
 
 .header__slide-info_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 445px) {
+  .header__slide-info_content {
+    flex-direction: column;
+  }
 }
 
 .header__slide-info_parameters {
@@ -282,10 +423,25 @@
 .header__slide-info_parametr:last-child {
   margin: 0;
 }
+@media screen and (max-width: 473px) {
+  .header__slide-info_parametr span {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .header__slide-info_parametr {
+    font-size: 11px;
+  }
+}
 
 .header__slide-info_decor {
   display: block;
   max-height: 60px;
+}
+@media screen and (max-width: 445px) {
+  .header__slide-info_decor {
+    margin-top: 15px;
+  }
 }
 
 .header__slide-btn_box {
@@ -293,6 +449,12 @@
   margin-top: -61px;
   z-index: 1;
   position: relative;
+}
+@media screen and (max-width: 725px) {
+  .header__slide-btn_box {
+    margin-top: -45px;
+    justify-content: center;
+  }
 }
 
 .header__slide-prev {
