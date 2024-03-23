@@ -9,13 +9,13 @@ $('.nav__burger').on('click', function (e) {
 // Header background changer
 function changeHeaderBkg() {
     if ($('.header__slide--danilkin').hasClass('slick-active')) {
-        $('.header').css('background', `url('../img/header/danilkin/bgc.jpg') no-repeat`);
+        $('.header').css('background', `url('https://raw.githubusercontent.com/soloviyshpak/MA-m/main/img/header/danilkin/bgc.jpg') no-repeat`);
         $('.header').css('background-size', `cover`);
     } else if ($('.header__slide--illiya').hasClass('slick-active')) {
-        $('.header').css('background', `url('../img/header/illiya/bgc.jpg') no-repeat`);
+        $('.header').css('background', `url('https://raw.githubusercontent.com/soloviyshpak/MA-m/main/img/header/illiya/bgc.jpg') no-repeat`);
         $('.header').css('background-size', `cover`);
     } else if ($('.header__slide--pallada').hasClass('slick-active')) {
-        $('.header').css('background', `url('../img/header/pallada/bgc.jpg') no-repeat`);
+        $('.header').css('background', `url('https://raw.githubusercontent.com/soloviyshpak/MA-m/main/img/header/pallada/bgc.jpg') no-repeat`);
         $('.header').css('background-size', `cover`);   
     }
 }
