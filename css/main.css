@@ -722,12 +722,22 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 525px) {
+  .publ__toprow {
+    flex-direction: column;
+  }
+}
 
 .publ__title {
   font-size: 36px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #333;
+}
+@media screen and (max-width: 525px) {
+  .publ__title {
+    margin-bottom: 10px;
+  }
 }
 
 .publ__all {
@@ -750,6 +760,12 @@
   .publ__cards {
     flex-flow: row wrap;
     row-gap: 55px;
+  }
+}
+@media screen and (max-width: 1009px) {
+  .publ__cards {
+    justify-content: center;
+    align-items: center;
   }
 }
 

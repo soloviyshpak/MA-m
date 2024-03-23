@@ -5,9 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media (525px) {
+        flex-direction: column;
+    }
 }
 .publ__title {
     @include title ($title-color);
+    @include media (525px) {
+        margin-bottom: 10px;
+    }
 }
 .publ__all {
     @include all_link ();
@@ -19,6 +25,10 @@
     @include media (1320px) {
         flex-flow: row wrap;
         row-gap: 55px;
+    }
+    @include media (1009px) {
+        justify-content: center;
+        align-items: center;
     }
 }
 .publ__card {
