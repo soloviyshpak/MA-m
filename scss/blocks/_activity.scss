@@ -8,6 +8,9 @@
     text-transform: uppercase;
     color: $title-color;
     margin-bottom: 60px;
+    @include media (480px) {
+        font-size: 25px;
+    }
 }
 .activity__linkbox {
     display: flex;
@@ -31,9 +34,16 @@
 }
 .activity__content {
     display: flex;
+    @include media (1280px) {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
 }
 .activity__article {
     max-width: 666px;
+    @include media (1280px) {
+        margin: 0 auto;
+    }
 }
 .activity__preface {
     padding-top: 6px;
@@ -80,12 +90,20 @@
     padding: 50px 60px 60px 60px;
     width: 524px;
     height: 620px;
-    margin-left: 104px;
-    @include media (1295px) {
-        height: 720px;
+    margin-left: 104px;  
+    @include media (1280px) {
+        margin: 0 auto 15px;
     }
-    @include media (1230px) {
-        height: 820px;
+    @include media (560px) {
+        width: 386px;
+    }
+    @include media (420px) {
+        width: 300px;
+    }
+    @include media (333px) {
+        width: 250px;
+        height: 836px;
+        text-align: center;
     }
 }
 .activity__projects-title {
@@ -100,6 +118,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 35px 45px;
+    @include media (333px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .activity__projects-item {
     max-width: 180px;
@@ -108,7 +129,19 @@
     font-weight: 900;
     font-size: 64px;
     text-transform: uppercase;
+    @include media (560px) {
+        font-size: 50px;
+    }
+    @include media (420px) {
+        font-size: 42px;
+    }
 }
 .activity__projects-text {
     font-weight: 500;
+    @include media (560px) {
+        font-size: 11px;
+    }
+    @include media (560px) {
+        font-size: 9px;
+    }
 }
