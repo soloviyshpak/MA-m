@@ -1916,6 +1916,16 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 32px 25px;
 }
+@media screen and (max-width: 1110px) {
+  .vacaties__block-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 747px) {
+  .vacaties__block-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .vacaties__block-card {
   border: 1px solid rgba(51, 51, 51, 0.3);
